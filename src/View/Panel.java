@@ -13,7 +13,7 @@ public class Panel extends JPanel {
         this.textField = textField;
     }
 
-    private JTextField textField = new JTextField("Startfg34gg4m");
+    private JTextField textField = new JTextField();
 
     public Panel() {
 

@@ -1,13 +1,14 @@
 package View.Buttons;
 
 import Controller.ButtonFourAction;
+import View.Panel;
 
 import javax.swing.*;
 import java.awt.*;
 
 public class ButtonFour extends JButton {
-    public ButtonFour() {
-        super(new ButtonFourAction());
+    public ButtonFour(Panel panel) {
+        super(new ButtonFourAction(panel));
         setButtonProperties();
     }
 

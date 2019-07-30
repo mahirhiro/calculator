@@ -22,7 +22,6 @@ public class Frame extends JFrame {
         jtb.setRollover(true);
 
         this.add(panel.getTextField(), BorderLayout.PAGE_START);
-        panel.getTextField().setText("Hey");
 
         panel.add(new ButtonOne());
         panel.add(new ButtonTwo());
@@ -31,8 +30,8 @@ public class Frame extends JFrame {
         panel.add(new ButtonZero());
         panel.add(new ButtonDecimal());
         panel.add(new ButtonEquals());
-        panel.add(new ButtonFour());
-        panel.add(new ButtonFive());
+        panel.add(new ButtonFour(panel));
+        panel.add(new ButtonFive(panel));
         panel.add(new ButtonSix());
         panel.add(new ButtonMinus());
         panel.add(new ButtonSeven());
