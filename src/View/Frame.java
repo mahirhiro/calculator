@@ -1,5 +1,6 @@
 package View;
 
+import Model.Calculations;
 import View.Buttons.*;
 
 import javax.swing.*;
@@ -7,13 +8,14 @@ import javax.swing.border.Border;
 import java.awt.*;
 
 public class Frame extends JFrame {
+    private Calculations calculations;
 
-    public Frame() {
-
+    public Frame(Calculations calculations) {
+        this.calculations = calculations;
         JToolBar jtb = new JToolBar();
 
 
-        Panel panel = new Panel();
+        Panel panel = new Panel(calculations);
         panel.setSize(new Dimension(280, 400));
         panel.setLayout(null);
 
@@ -22,7 +24,6 @@ public class Frame extends JFrame {
         jtb.setRollover(true);
 
         this.add(panel.getTextField(), BorderLayout.PAGE_START);
-        panel.getTextField().setText("Hey");
 
         panel.add(new ButtonOne());
         panel.add(new ButtonTwo());
@@ -31,7 +32,7 @@ public class Frame extends JFrame {
         panel.add(new ButtonZero());
         panel.add(new ButtonDecimal());
         panel.add(new ButtonEquals());
-        panel.add(new ButtonFour());
+        panel.add(new ButtonFour(calculations,panel));
         panel.add(new ButtonFive());
         panel.add(new ButtonSix());
         panel.add(new ButtonMinus());

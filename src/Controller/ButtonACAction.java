@@ -15,7 +15,7 @@ public class ButtonACAction extends AbstractAction {
     @Override
     public void actionPerformed(ActionEvent e) {
         System.out.println("Clear");
-        panel.getTextField().setText("YO");
+        panel.getTextField().setText(" ");
 
     }
 }

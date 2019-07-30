@@ -1,22 +1,23 @@
 package View;
 
+import Model.Calculations;
+
 import javax.swing.*;
 import java.awt.*;
+import java.util.Observable;
+import java.util.Observer;
 
-public class Panel extends JPanel {
+public class Panel extends JPanel implements Observer {
+    private Calculations calculations;
 
     public JTextField getTextField() {
         return textField;
     }
 
-    public void setTextField(JTextField textField) {
-        this.textField = textField;
-    }
+    private JTextField textField = new JTextField();
 
-    private JTextField textField = new JTextField("Startfg34gg4m");
-
-    public Panel() {
-
+    public Panel(Calculations calculations) {
+        this.calculations = calculations;
         setBackground(Color.BLACK);
         textField.setColumns(100);
         textField.setPreferredSize(new Dimension(50,50));
@@ -26,5 +27,14 @@ public class Panel extends JPanel {
         textField.setHorizontalAlignment(SwingConstants.RIGHT);
         textField.setForeground(Color.WHITE);
         textField.setBackground(Color.BLACK);
+        setOpaque(true);
+        setFocusable(true);
+        calculations.addObserver(this);
+        setVisible(true);
+    }
+
+    @Override
+    public void update(Observable o, Object arg) {
+        repaint();
     }
 }
