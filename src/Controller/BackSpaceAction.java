@@ -5,6 +5,7 @@ import View.Panel;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
+import java.awt.Dimension;
 
 public class BackSpaceAction extends AbstractAction {
     private Panel panel;
@@ -18,9 +19,9 @@ public class BackSpaceAction extends AbstractAction {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        System.out.println("Erase");
+        String length =  panel.getTextField().getText();
+        System.out.println("Value is : " + length);
         //calculations.resetI();
-        calculations.resetI();
-        panel.clearTextBox();
+
     }
 }
