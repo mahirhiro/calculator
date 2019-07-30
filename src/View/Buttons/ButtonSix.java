@@ -1,14 +1,15 @@
 package View.Buttons;
 
-
 import Controller.ButtonSixAction;
+import Model.Calculations;
+import View.Panel;
 
 import javax.swing.*;
 import java.awt.*;
 
 public class ButtonSix extends JButton {
-    public ButtonSix() {
-        super(new ButtonSixAction());
+    public ButtonSix(Calculations calculations, Panel panel) {
+        super(new ButtonSixAction(calculations, panel));
         setButtonProperties();
     }
 

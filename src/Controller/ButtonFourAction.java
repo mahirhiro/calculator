@@ -18,7 +18,9 @@ public class ButtonFourAction extends AbstractAction {
     @Override
     public void actionPerformed(ActionEvent e) {
         System.out.println("Four");
-        //calculations.setNumberOne(4);
-        panel.getTextField().setText(panel.getTextField().getText()+4);
+        calculations.setI(4);
+        panel.updateTextBox();
+
     }
+
 }

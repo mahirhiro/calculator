@@ -2,11 +2,18 @@ package Model;
 
 import View.Panel;
 
-import java.util.Observable;
-import java.util.Observer;
-
-public class Calculations extends Observable implements Observer {
+public class Calculations {
     private Panel panel;
+
+    private int i;
+
+    public int getI() {
+        return i;
+    }
+
+    public void setI(int i) {
+        this.i = i;
+    }
 
     public Calculations() {
 
@@ -17,16 +24,7 @@ public class Calculations extends Observable implements Observer {
 
     }
 
-    public void setNumberOne(int i) {
-        panel.getTextField().setText(panel.getTextField().getText()+4);
-    }
-
-    @Override
-    public void update(Observable o, Object arg) {
-        refresh();
-    }
-    public void refresh(){
-        setChanged();
-        notifyObservers();
+    public String resetI() {
+        return " ";
     }
 }

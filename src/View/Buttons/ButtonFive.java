@@ -2,13 +2,15 @@ package View.Buttons;
 
 
 import Controller.ButtonFiveAction;
+import Model.Calculations;
+import View.Panel;
 
 import javax.swing.*;
 import java.awt.*;
 
 public class ButtonFive extends JButton {
-    public ButtonFive() {
-        super(new ButtonFiveAction());
+    public ButtonFive(Calculations calculations, Panel panel) {
+        super(new ButtonFiveAction(calculations, panel));
         setButtonProperties();
     }
 

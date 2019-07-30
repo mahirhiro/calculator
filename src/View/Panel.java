@@ -4,10 +4,8 @@ import Model.Calculations;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.Observable;
-import java.util.Observer;
 
-public class Panel extends JPanel implements Observer {
+public class Panel extends JPanel {
     private Calculations calculations;
 
     public JTextField getTextField() {
@@ -29,12 +27,14 @@ public class Panel extends JPanel implements Observer {
         textField.setBackground(Color.BLACK);
         setOpaque(true);
         setFocusable(true);
-        calculations.addObserver(this);
         setVisible(true);
     }
 
-    @Override
-    public void update(Observable o, Object arg) {
-        repaint();
+    public void updateTextBox() {
+        textField.setText(textField.getText() + calculations.getI());
+    }
+
+    public void clearTextBox() {
+        textField.setText(calculations.resetI());
     }
 }

@@ -2,13 +2,15 @@ package View.Buttons;
 
 
 import Controller.ButtonNineAction;
+import Model.Calculations;
+import View.Panel;
 
 import javax.swing.*;
 import java.awt.*;
 
 public class ButtonNine extends JButton {
-    public ButtonNine() {
-        super(new ButtonNineAction());
+    public ButtonNine(Calculations calculations, Panel panel) {
+        super(new ButtonNineAction(calculations, panel));
         setButtonProperties();
     }
 

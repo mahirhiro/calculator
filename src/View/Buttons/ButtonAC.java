@@ -1,14 +1,15 @@
 package View.Buttons;
 
 import Controller.ButtonACAction;
+import Model.Calculations;
 import View.Panel;
 
 import javax.swing.*;
 import java.awt.*;
 
 public class ButtonAC extends JButton {
-    public ButtonAC(Panel panel) {
-        super(new ButtonACAction(panel));
+    public ButtonAC(Calculations calculations, Panel panel) {
+        super(new ButtonACAction(calculations, panel));
         setButtonProperties();
     }
 
