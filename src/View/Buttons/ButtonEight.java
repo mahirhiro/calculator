@@ -2,13 +2,15 @@ package View.Buttons;
 
 
 import Controller.ButtonEightAction;
+import Model.Calculations;
+import View.Panel;
 
 import javax.swing.*;
 import java.awt.*;
 
 public class ButtonEight extends JButton {
-    public ButtonEight() {
-        super(new ButtonEightAction());
+    public ButtonEight(Calculations calculations, Panel panel) {
+        super(new ButtonEightAction(calculations, panel));
         setButtonProperties();
     }
 

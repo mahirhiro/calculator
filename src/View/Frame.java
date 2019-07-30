@@ -1,44 +1,42 @@
 package View;
 
+import Model.Calculations;
 import View.Buttons.*;
 
 import javax.swing.*;
-import javax.swing.border.Border;
 import java.awt.*;
 
 public class Frame extends JFrame {
+    private Calculations calculations;
 
-    public Frame() {
+    public Frame(Calculations calculations) {
+        this.calculations = calculations;
 
-        JToolBar jtb = new JToolBar();
 
 
-        Panel panel = new Panel();
+        Panel panel = new Panel(calculations);
         panel.setSize(new Dimension(280, 400));
         panel.setLayout(null);
 
-        jtb.add(new ButtonOne());
-        jtb.setFloatable(false);
-        jtb.setRollover(true);
-
         this.add(panel.getTextField(), BorderLayout.PAGE_START);
 
-        panel.add(new ButtonOne());
-        panel.add(new ButtonTwo());
-        panel.add(new ButtonThree());
+        panel.add(new ButtonOne(calculations, panel));
+        panel.add(new ButtonTwo(calculations, panel));
+        panel.add(new ButtonThree(calculations, panel));
+        panel.add(new ButtonFour(calculations, panel));
+        panel.add(new ButtonFive(calculations, panel));
+        panel.add(new ButtonSix(calculations, panel));
+        panel.add(new ButtonSeven(calculations, panel));
+        panel.add(new ButtonEight(calculations, panel));
+        panel.add(new ButtonNine(calculations, panel));
+        panel.add(new ButtonZero(calculations, panel));
+
+        panel.add(new ButtonAC(calculations, panel));
         panel.add(new ButtonPlus());
-        panel.add(new ButtonZero());
         panel.add(new ButtonDecimal());
         panel.add(new ButtonEquals());
-        panel.add(new ButtonFour(panel));
-        panel.add(new ButtonFive(panel));
-        panel.add(new ButtonSix());
         panel.add(new ButtonMinus());
-        panel.add(new ButtonSeven());
-        panel.add(new ButtonEight());
-        panel.add(new ButtonNine());
         panel.add(new ButtonMultiply());
-        panel.add(new ButtonAC(panel));
         panel.add(new ButtonMod());
         panel.add(new ButtonDivide());
 

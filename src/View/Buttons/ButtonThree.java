@@ -1,13 +1,15 @@
 package View.Buttons;
 
 import Controller.ButtonThreeAction;
+import Model.Calculations;
+import View.Panel;
 
 import javax.swing.*;
 import java.awt.*;
 
 public class ButtonThree extends JButton {
-    public ButtonThree() {
-        super(new ButtonThreeAction());
+    public ButtonThree(Calculations calculations, Panel panel) {
+        super(new ButtonThreeAction(calculations, panel));
         setButtonProperties();
     }
 

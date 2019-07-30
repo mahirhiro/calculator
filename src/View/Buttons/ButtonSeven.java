@@ -1,13 +1,15 @@
 package View.Buttons;
 
 import Controller.ButtonSevenAction;
+import Model.Calculations;
+import View.Panel;
 
 import javax.swing.*;
 import java.awt.*;
 
 public class ButtonSeven extends JButton {
-    public ButtonSeven() {
-        super(new ButtonSevenAction());
+    public ButtonSeven(Calculations calculations, Panel panel) {
+        super(new ButtonSevenAction(calculations, panel));
         setButtonProperties();
     }
 

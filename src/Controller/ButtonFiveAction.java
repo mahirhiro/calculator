@@ -1,20 +1,25 @@
 package Controller;
 
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.ActionEvent;
+import Model.Calculations;
 import View.Panel;
+
+import javax.swing.*;
+import java.awt.event.ActionEvent;
 
 public class ButtonFiveAction extends AbstractAction {
     private Panel panel;
-    public ButtonFiveAction(Panel panel) {
+    private Calculations calculations;
+
+    public ButtonFiveAction(Calculations calculations, Panel panel) {
         super("5");
+        this.calculations = calculations;
         this.panel = panel;
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
         System.out.println("Five");
-        panel.getTextField().setText(panel.getTextField().getText()+5);
+        calculations.setI(5);
+        panel.updateTextBox();
     }
 }
