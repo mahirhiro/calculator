@@ -32,6 +32,7 @@ public class Frame extends JFrame {
         panel.add(new ButtonZero(calculations, panel));
 
         panel.add(new ButtonAC(calculations, panel));
+        panel.add(new BackSpace(calculations, panel));
         panel.add(new ButtonPlus());
         panel.add(new ButtonDecimal());
         panel.add(new ButtonEquals());
