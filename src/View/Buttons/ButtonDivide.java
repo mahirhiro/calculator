@@ -16,7 +16,7 @@ public class ButtonDivide extends JButton {
         setHorizontalTextPosition(AbstractButton.CENTER);
         setToolTipText("Addition");
         setSize(50, 50);
-        setLocation(215, 95);
+        setLocation(215, 10);
         setFont(new Font("Helvetica", Font.PLAIN, 30));
         setForeground(Color.WHITE);
         setBackground(new Color(240, 154, 55));

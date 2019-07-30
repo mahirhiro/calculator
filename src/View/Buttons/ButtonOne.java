@@ -15,7 +15,7 @@ public class ButtonOne extends JButton {
         setVerticalTextPosition(AbstractButton.CENTER);
         setHorizontalTextPosition(AbstractButton.CENTER);
         setSize(50, 50);
-        setLocation(20, 275);
+        setLocation(20, 190);
         setFont(new Font("Helvetica", Font.PLAIN, 30));
         setForeground(Color.WHITE);
         setBackground(new Color(51, 51, 51));

@@ -15,7 +15,7 @@ public class ButtonMultiply extends JButton {
         setVerticalTextPosition(AbstractButton.CENTER);
         setHorizontalTextPosition(AbstractButton.CENTER);
         setSize(50, 50);
-        setLocation(215, 155);
+        setLocation(215, 70);
         setFont(new Font("Helvetica", Font.PLAIN, 30));
         setForeground(Color.WHITE);
         setBackground(new Color(240, 154, 55));

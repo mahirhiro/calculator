@@ -15,7 +15,7 @@ public class ButtonDecimal extends JButton {
         setVerticalTextPosition(AbstractButton.CENTER);
         setHorizontalTextPosition(AbstractButton.CENTER);
         setSize(50, 50);
-        setLocation(150, 335);
+        setLocation(150, 250);
         setFont(new Font("Helvetica", Font.PLAIN, 30));
         setForeground(Color.WHITE);
         setBackground(Color.DARK_GRAY);

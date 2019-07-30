@@ -16,7 +16,7 @@ public class ButtonMod extends JButton {
         setVerticalTextPosition(AbstractButton.CENTER);
         setHorizontalTextPosition(AbstractButton.CENTER);
         setSize(50, 50);
-        setLocation(150, 95);
+        setLocation(150, 10);
         setFont(new Font("Helvetica", Font.PLAIN, 25));
         setForeground(Color.BLACK);
         setBackground(new Color(165, 165, 165));
