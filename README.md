@@ -12,10 +12,10 @@
 
 
 ## General info
-
+This was 
 	
 ## Screenshots
-
+<img width="360" alt="gif" src="https://user-images.githubusercontent.com/49659324/62206969-f8fecc80-b3a3-11e9-96e4-b6d76036ead9.gif"> <img width="353" alt="Screen Shot 2019-07-31 at 3 03 32 PM" src="https://user-images.githubusercontent.com/49659324/62207130-6ca0d980-b3a4-11e9-9e27-e1a2b5c0d28c.png">
 
 ## How to run it?
 1. Go to where to want to save the file on your computer with your terminal
@@ -29,10 +29,13 @@
 
 
 ## Features
-
+* Calculate numbers with priority - Example: 2 + 3 / 3 = 3 whereas a simple calculator would produce the answer of 5/3
+* A clear button incase you need to erase the screen
+* A backspace button incase you just want to go back one space
+* Cool and smooth UI with vibrant colors
 
 ## Status
-Project is: **In process**
+Project is: **Completed**
 
 ## Contributing
 Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits.
