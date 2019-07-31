@@ -5,7 +5,6 @@ import View.Panel;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
-import java.awt.Dimension;
 
 public class BackSpaceAction extends AbstractAction {
     private Panel panel;

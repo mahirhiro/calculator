@@ -16,6 +16,7 @@ public class ButtonPlusAction extends AbstractAction {
     @Override
     public void actionPerformed(ActionEvent e) {
         System.out.println("Plus");
+        panel.getTextField().setText("");
         panel.stringCreater("+");
     }
 }
