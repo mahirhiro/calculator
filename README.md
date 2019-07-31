@@ -1,4 +1,4 @@
-<img width="40" alt="calculator logo" src="https://user-images.githubusercontent.com/49659324/62208636-83492f80-b3a8-11e9-8fc2-849f65e6f58e.png"> ## Calculator
+# Calculator <img align="left" width="60" alt="calculator logo" src="https://user-images.githubusercontent.com/49659324/62208636-83492f80-b3a8-11e9-8fc2-849f65e6f58e.png"> [![Build Status](https://travis-ci.com/mahirhiro/calculator.svg?branch=master)](https://travis-ci.com/mahirhiro/calculator)
 
 
 ## Table of contents
@@ -12,7 +12,7 @@
 
 
 ## General info
-This was 
+This was my second personal project which was to build a nice interface with an app, I found the calculator was the best way to approach to this.
 	
 ## Screenshots
 <img width="360" alt="gif" src="https://user-images.githubusercontent.com/49659324/62208123-fa7dc400-b3a6-11e9-903a-2b4126346ca2.gif"> <img width="360" alt="Screen Shot 2019-07-31 at 3 03 32 PM" src="https://user-images.githubusercontent.com/49659324/62208227-44ff4080-b3a7-11e9-8e8e-7c1aec4d8a1b.png">
