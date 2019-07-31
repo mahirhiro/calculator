@@ -39,28 +39,26 @@ public class Panel extends JPanel {
         setVisible(true);
     }
 
-    public void setsT(String sT) {
-        this.sT = sT;
-    }
     public void updateTextBox() {
         textField.setText(textField.getText() + calculations.getI());
     }
 
     public void updateTextBoxAC() {
         textField.setText(textField.getText().substring(0, textField.getText().length() - 1));
+        sT = textField.getText();
     }
     public void stringCreater(String s) {
         if (!s.equals("=")) {
             sT = sT + s;
         } else {
             System.out.println("Before ST:" + sT);
-            calculations.calc.convertArrayToChar(calculations.calc.make(sT));
-            sT = String.valueOf(calculations.calc.postflixConvertToBinaryTree()).split("\\.")[0];
-            textField.setText(sT);
+            textField.setText("" + calculations.calc.make(sT));
+            sT = "" + calculations.calc.make(sT);
         }
     }
 
     public void clearTextBox() {
         textField.setText(calculations.resetI());
+        sT = "";
     }
 }
