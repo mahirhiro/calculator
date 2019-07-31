@@ -29,9 +29,7 @@ public class Panel extends JPanel {
         textField.setHorizontalAlignment(SwingConstants.RIGHT);
         textField.setForeground(Color.WHITE);
         textField.setBackground(Color.BLACK);
-        setOpaque(true);
-        setFocusable(true);
-        setVisible(true);
+
     }
 
     public void updateTextBox() {
@@ -43,7 +41,7 @@ public class Panel extends JPanel {
         oldSymbols = textField.getText();
     }
 
-    public void stringCreater(String newSymbol) {
+    public void stringBuilder(String newSymbol) {
         if (!newSymbol.equals("=")) {
             oldSymbols = oldSymbols + newSymbol;
         } else {
@@ -54,7 +52,7 @@ public class Panel extends JPanel {
     }
 
     public void clearTextBox() {
-        textField.setText(calculations.resetI());
+        textField.setText(calculations.getSymbolAcceptor());
         oldSymbols = "";
     }
 

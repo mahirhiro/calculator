@@ -16,6 +16,7 @@ public class ButtonMultiply extends JButton {
     private void setButtonProperties() {
         setVerticalTextPosition(AbstractButton.CENTER);
         setHorizontalTextPosition(AbstractButton.CENTER);
+        setToolTipText("Multiply");
         setSize(50, 50);
         setLocation(215, 70);
         setFont(new Font("Helvetica", Font.PLAIN, 30));

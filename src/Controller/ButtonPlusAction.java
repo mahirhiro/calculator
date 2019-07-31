@@ -19,7 +19,7 @@ public class ButtonPlusAction extends AbstractAction {
     @Override
     public void actionPerformed(ActionEvent e) {
         System.out.println("Plus");
-        panel.stringCreater("+");
+        panel.stringBuilder("+");
         calculations.symbolAcceptor("+");
         panel.updateTextBoxSymbols();
     }

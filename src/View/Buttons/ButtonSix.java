@@ -16,6 +16,7 @@ public class ButtonSix extends JButton {
     private void setButtonProperties() {
         setVerticalTextPosition(AbstractButton.CENTER);
         setHorizontalTextPosition(AbstractButton.CENTER);
+        setToolTipText("6");
         setSize(50, 50);
         setLocation(150, 130);
         setFont(new Font("Helvetica", Font.PLAIN, 30));

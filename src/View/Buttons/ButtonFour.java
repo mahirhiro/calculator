@@ -16,6 +16,7 @@ public class ButtonFour extends JButton {
     private void setButtonProperties() {
         setVerticalTextPosition(AbstractButton.CENTER);
         setHorizontalTextPosition(AbstractButton.CENTER);
+        setToolTipText("4");
         setSize(50, 50);
         setLocation(20, 130);
         setFont(new Font("Helvetica", Font.PLAIN, 30));

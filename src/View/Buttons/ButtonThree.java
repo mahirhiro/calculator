@@ -16,7 +16,7 @@ public class ButtonThree extends JButton {
     private void setButtonProperties() {
         setVerticalTextPosition(AbstractButton.CENTER);
         setHorizontalTextPosition(AbstractButton.CENTER);
-        setToolTipText("Button Three");
+        setToolTipText("3");
         setSize(50, 50);
         setLocation(150, 190);
         setFont(new Font("Helvetica", Font.PLAIN, 30));

@@ -19,7 +19,7 @@ public class ButtonDivideAction extends AbstractAction {
     @Override
     public void actionPerformed(ActionEvent e) {
         System.out.println("Divide");
-        panel.stringCreater("/");
+        panel.stringBuilder("/");
         calculations.symbolAcceptor("÷");
         panel.updateTextBoxSymbols();
 

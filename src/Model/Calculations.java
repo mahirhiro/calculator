@@ -6,20 +6,16 @@ public class Calculations {
     private String s;
     private int i;
 
+    public Calculations() {
+
+    }
+
     public int getI() {
         return i;
     }
 
     public void setI(int i) {
         this.i = i;
-    }
-
-    public Calculations() {
-
-    }
-
-    public String resetI() {
-        return " ";
     }
 
     public void symbolAcceptor(String s) {

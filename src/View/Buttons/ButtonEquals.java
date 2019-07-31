@@ -16,7 +16,7 @@ public class ButtonEquals extends JButton {
     private void setButtonProperties() {
         setVerticalTextPosition(AbstractButton.CENTER);
         setHorizontalTextPosition(AbstractButton.CENTER);
-        setToolTipText("Addition");
+        setToolTipText("Equals");
         setSize(50, 50);
         setLocation(215, 250);
         setFont(new Font("Helvetica", Font.PLAIN, 30));

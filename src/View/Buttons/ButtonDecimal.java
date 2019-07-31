@@ -16,6 +16,7 @@ public class ButtonDecimal extends JButton {
     private void setButtonProperties() {
         setVerticalTextPosition(AbstractButton.CENTER);
         setHorizontalTextPosition(AbstractButton.CENTER);
+        setToolTipText("Decimal");
         setSize(50, 50);
         setLocation(150, 250);
         setFont(new Font("Helvetica", Font.PLAIN, 30));

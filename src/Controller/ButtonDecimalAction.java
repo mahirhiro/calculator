@@ -22,6 +22,6 @@ public class ButtonDecimalAction extends AbstractAction {
         System.out.println("Decimal");
         calculations.symbolAcceptor(".");
         panel.updateTextBoxSymbols();
-        panel.stringCreater(".");
+        panel.stringBuilder(".");
     }
 }

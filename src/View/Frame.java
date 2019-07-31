@@ -7,16 +7,12 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Frame extends JFrame {
-    private Calculations calculations;
+
 
     public Frame(Calculations calculations) {
-        this.calculations = calculations;
 
         Panel panel = new Panel(calculations);
-        panel.setSize(new Dimension(280, 400));
         panel.setLayout(null);
-
-        this.add(panel.getTextField(), BorderLayout.PAGE_START);
 
         panel.add(new ButtonOne(calculations, panel));
         panel.add(new ButtonTwo(calculations, panel));
@@ -30,7 +26,7 @@ public class Frame extends JFrame {
         panel.add(new ButtonZero(calculations, panel));
 
         panel.add(new ButtonAC(calculations, panel));
-        panel.add(new ButtonBackspace(calculations, panel));
+        panel.add(new ButtonBackspace(panel));
         panel.add(new ButtonPlus(calculations, panel));
         panel.add(new ButtonDecimal(calculations, panel));
         panel.add(new ButtonEquals(panel));
@@ -38,8 +34,9 @@ public class Frame extends JFrame {
         panel.add(new ButtonMultiply(calculations, panel));
         panel.add(new ButtonDivide(calculations, panel));
 
+        this.add(panel.getTextField(), BorderLayout.PAGE_START);
         this.getContentPane().add(panel);
-        //this.setContentPane(panel.getTextField());
+
         /* This part sets the layout for the dimensions and other necessary features */
         this.setTitle("Calculator");
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);

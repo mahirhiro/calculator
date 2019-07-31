@@ -16,6 +16,7 @@ public class ButtonMinus extends JButton {
     private void setButtonProperties() {
         setVerticalTextPosition(AbstractButton.CENTER);
         setHorizontalTextPosition(AbstractButton.CENTER);
+        setToolTipText("Subtraction");
         setSize(50, 50);
         setLocation(215, 130);
         setFont(new Font("Helvetica", Font.PLAIN, 30));

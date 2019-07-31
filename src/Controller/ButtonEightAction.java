@@ -20,7 +20,7 @@ public class ButtonEightAction extends AbstractAction {
     public void actionPerformed(ActionEvent e) {
         System.out.println("Eight");
         calculations.setI(8);
-        panel.stringCreater("8");
+        panel.stringBuilder("8");
         panel.updateTextBox();
     }
 }

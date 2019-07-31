@@ -17,6 +17,7 @@ public class ButtonNine extends JButton {
     private void setButtonProperties() {
         setVerticalTextPosition(AbstractButton.CENTER);
         setHorizontalTextPosition(AbstractButton.CENTER);
+        setToolTipText("9");
         setSize(50, 50);
         setLocation(150, 70);
         setFont(new Font("Helvetica", Font.PLAIN, 30));

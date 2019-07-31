@@ -22,7 +22,7 @@ public class ButtonOneAction extends AbstractAction {
     public void actionPerformed(ActionEvent e) {
         System.out.println("One");
         calculations.setI(1);
-        panel.stringCreater("1");
+        panel.stringBuilder("1");
         panel.updateTextBox();
     }
 }

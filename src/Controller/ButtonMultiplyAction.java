@@ -19,7 +19,7 @@ public class ButtonMultiplyAction extends AbstractAction {
     @Override
     public void actionPerformed(ActionEvent e) {
         System.out.println("Multiplication");
-        panel.stringCreater("*");
+        panel.stringBuilder("*");
         calculations.symbolAcceptor("×");
         panel.updateTextBoxSymbols();
     }

@@ -15,12 +15,12 @@ public class Expressions {
         String operator = "*/+-=";
         //split up the operators from the values
         StringTokenizer tokenizer = new StringTokenizer(expression, operator, true);
-        Stack operatorStack = new Stack();
-        Stack valueStack = new Stack();
+        Stack<String> operatorStack = new Stack<>();
+        Stack<String> valueStack = new Stack<>();
         while (tokenizer.hasMoreTokens()) {
             //add the next token to the proper stack
             String token = tokenizer.nextToken();
-            if (operator.indexOf(token) < 0)
+            if (!operator.contains(token))
                 valueStack.push(token);
             else
                 operatorStack.push(token);
@@ -28,54 +28,60 @@ public class Expressions {
             resolve(valueStack, operatorStack);
         }
         //return the top of the value stack
-        String lastOne = (String) valueStack.pop();
+        String lastOne = valueStack.pop();
         return Double.parseDouble(lastOne);
     }
 
-    public int getPriority(String op) {
-        if (op.equals("*") || op.equals("/"))
-            return 1;
-        else if (op.equals("+") || op.equals("-"))
-            return 2;
-        else if (op.equals("="))
-            return 3;
-        else
-            return Integer.MIN_VALUE;
+    private int getPriority(String op) {
+        switch (op) {
+            case "*":
+            case "/":
+                return 1;
+            case "+":
+            case "-":
+                return 2;
+            case "=":
+                return 3;
+            default:
+                return Integer.MIN_VALUE;
+        }
     }
 
-    public void resolve(Stack values,
-                        Stack operators) {
+    private void resolve(Stack<String> values,
+                         Stack<String> operators) {
         while (operators.size() >= 2) {
-            String first = (String) operators.pop();
-            String second = (String) operators.pop();
+            String first = operators.pop();
+            String second = operators.pop();
             if (getPriority(first) < getPriority(second)) {
                 operators.push(second);
                 operators.push(first);
                 return;
             } else {
-                String firstValue = (String) values.pop();
-                String secondValue = (String) values.pop();
+                String firstValue = values.pop();
+                String secondValue = values.pop();
                 values.push(getResults(secondValue, second, firstValue));
                 operators.push(first);
             }
         }
     }
 
-    public String getResults(String operand1, String operator, String operand2) {
+    private String getResults(String operand1, String operator, String operand2) {
         System.out.println("Performing " +
                 operand1 + operator + operand2);
         double op1 = Double.parseDouble(operand1);
         double op2 = Double.parseDouble(operand2);
-        if (operator.equals("*"))
-            return "" + (op1 * op2);
-        else if (operator.equals("/"))
-            return "" + (op1 / op2);
-        else if (operator.equals("+"))
-            return "" + (op1 + op2);
-        else if (operator.equals("-"))
-            return "" + (op1 - op2);
-        else
-            return null;
+        switch (operator) {
+            case "*":
+                return "" + (op1 * op2);
+            case "/":
+                return "" + (op1 / op2);
+            case "+":
+                return "" + (op1 + op2);
+            case "-":
+                return "" + (op1 - op2);
+            default:
+                return null;
+        }
     }
 }
 

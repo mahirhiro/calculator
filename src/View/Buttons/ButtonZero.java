@@ -17,6 +17,7 @@ public class ButtonZero extends JButton {
     private void setButtonProperties() {
         setVerticalTextPosition(AbstractButton.CENTER);
         setHorizontalTextPosition(AbstractButton.CENTER);
+        setToolTipText("0");
         setSize(115, 50);
         setLocation(20, 250);
         setFont(new Font("Helvetica", Font.PLAIN, 30));

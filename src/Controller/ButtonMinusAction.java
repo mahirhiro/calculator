@@ -19,7 +19,7 @@ public class ButtonMinusAction extends AbstractAction {
     @Override
     public void actionPerformed(ActionEvent e) {
         System.out.println("Minus");
-        panel.stringCreater("-");
+        panel.stringBuilder("-");
         calculations.symbolAcceptor("-");
         panel.updateTextBoxSymbols();
 

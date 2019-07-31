@@ -17,6 +17,7 @@ public class ButtonFive extends JButton {
     private void setButtonProperties() {
         setVerticalTextPosition(AbstractButton.CENTER);
         setHorizontalTextPosition(AbstractButton.CENTER);
+        setToolTipText("5");
         setSize(50, 50);
         setLocation(85, 130);
         setFont(new Font("Helvetica", Font.PLAIN, 30));

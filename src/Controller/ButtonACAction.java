@@ -19,7 +19,7 @@ public class ButtonACAction extends AbstractAction {
     @Override
     public void actionPerformed(ActionEvent e) {
         System.out.println("Clear");
-        calculations.resetI();
+        calculations.symbolAcceptor(" ");
         panel.clearTextBox();
     }
 }
