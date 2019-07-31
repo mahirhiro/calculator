@@ -56,7 +56,7 @@ public class Expressions {
     public String make(String infix) {
         System.out.printf("%-8s%-10s%-15s\n", "Input", "Stack", "Postfix");
         //equivalent postfix is empty initially
-        Stack<Character> s = new Stack<>();  //stack to hold symbols
+        Stack<Character> s = new Stack();  //stack to hold symbols
         s.push('#');  //symbol to denote end of stack
 
         System.out.printf("%-8s%-10s%-15s\n", "", format(s.toString()), postfix);

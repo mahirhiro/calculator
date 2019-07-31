@@ -12,8 +12,6 @@ public class Frame extends JFrame {
     public Frame(Calculations calculations) {
         this.calculations = calculations;
 
-
-
         Panel panel = new Panel(calculations);
         panel.setSize(new Dimension(280, 400));
         panel.setLayout(null);
