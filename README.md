@@ -1,4 +1,4 @@
-# Calculator
+<img width="40" alt="calculator logo" src="https://user-images.githubusercontent.com/49659324/62208636-83492f80-b3a8-11e9-8fc2-849f65e6f58e.png"> ## Calculator
 
 
 ## Table of contents
