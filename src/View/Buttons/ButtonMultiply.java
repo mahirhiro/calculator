@@ -1,13 +1,15 @@
 package View.Buttons;
 
 import Controller.ButtonMultiplyAction;
+import Model.Calculations;
+import View.Panel;
 
 import javax.swing.*;
 import java.awt.*;
 
 public class ButtonMultiply extends JButton {
-    public ButtonMultiply() {
-        super(new ButtonMultiplyAction());
+    public ButtonMultiply(Calculations calculations, Panel panel) {
+        super(new ButtonMultiplyAction(calculations, panel));
         setButtonProperties();
     }
 
@@ -19,5 +21,6 @@ public class ButtonMultiply extends JButton {
         setFont(new Font("Helvetica", Font.PLAIN, 30));
         setForeground(Color.WHITE);
         setBackground(new Color(240, 154, 55));
+
     }
 }

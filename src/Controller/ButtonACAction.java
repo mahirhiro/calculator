@@ -21,6 +21,7 @@ public class ButtonACAction extends AbstractAction {
         System.out.println("Clear");
         //calculations.resetI();
         calculations.resetI();
+        panel.setsT("");
         panel.clearTextBox();
     }
 }

@@ -1,15 +1,21 @@
 package Controller;
 
+import View.Panel;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 
 public class ButtonPlusAction extends AbstractAction {
-    public ButtonPlusAction() {
+    private Panel panel;
+
+    public ButtonPlusAction(Panel panel) {
         super("+");
+        this.panel = panel;
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
         System.out.println("Plus");
+        panel.stringCreater("+");
     }
 }

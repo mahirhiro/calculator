@@ -20,6 +20,7 @@ public class ButtonZeroAction extends AbstractAction {
     public void actionPerformed(ActionEvent e) {
         System.out.println("Zero");
         calculations.setI(0);
+        panel.stringCreater("0");
         panel.updateTextBox();
     }
 }

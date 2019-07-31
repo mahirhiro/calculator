@@ -1,13 +1,14 @@
 package View.Buttons;
 
 import Controller.ButtonPlusAction;
+import View.Panel;
 
 import javax.swing.*;
 import java.awt.*;
 
 public class ButtonPlus extends JButton {
-    public ButtonPlus() {
-        super(new ButtonPlusAction());
+    public ButtonPlus(Panel panel) {
+        super(new ButtonPlusAction(panel));
         setButtonProperties();
     }
 

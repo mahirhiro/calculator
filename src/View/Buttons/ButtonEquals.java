@@ -2,13 +2,14 @@ package View.Buttons;
 
 
 import Controller.ButtonEqualsAction;
+import View.Panel;
 
 import javax.swing.*;
 import java.awt.*;
 
 public class ButtonEquals extends JButton {
-    public ButtonEquals() {
-        super(new ButtonEqualsAction());
+    public ButtonEquals(Panel panel) {
+        super(new ButtonEqualsAction(panel));
         setButtonProperties();
     }
 
