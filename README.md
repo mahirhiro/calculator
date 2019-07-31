@@ -15,7 +15,7 @@
 This was 
 	
 ## Screenshots
-<img width="360" alt="gif" src="https://user-images.githubusercontent.com/49659324/62208123-fa7dc400-b3a6-11e9-903a-2b4126346ca2.gif"> <img width="353" alt="Screen Shot 2019-07-31 at 3 03 32 PM" src="https://user-images.githubusercontent.com/49659324/62207130-6ca0d980-b3a4-11e9-9e27-e1a2b5c0d28c.png">
+<img width="360" alt="gif" src="https://user-images.githubusercontent.com/49659324/62208123-fa7dc400-b3a6-11e9-903a-2b4126346ca2.gif"> <img width="360" alt="Screen Shot 2019-07-31 at 3 03 32 PM" src="https://user-images.githubusercontent.com/49659324/62208227-44ff4080-b3a7-11e9-8e8e-7c1aec4d8a1b.png">
 
 ## How to run it?
 1. Go to where to want to save the file on your computer with your terminal
