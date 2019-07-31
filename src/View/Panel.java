@@ -46,6 +46,9 @@ public class Panel extends JPanel {
         textField.setText(textField.getText() + calculations.getI());
     }
 
+    public void updateTextBoxAC() {
+        textField.setText(textField.getText().substring(0, textField.getText().length() - 1));
+    }
     public void stringCreater(String s) {
         if (!s.equals("=")) {
             sT = sT + s;
