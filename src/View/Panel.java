@@ -51,9 +51,7 @@ public class Panel extends JPanel {
             sT = sT + s;
         } else {
             System.out.println("Before ST:" + sT);
-            //System.out.println("wprks:"+ Arrays.toString(calculations.calc.convertArrayToChar(calculations.calc.make(sT))));
             calculations.calc.convertArrayToChar(calculations.calc.make(sT));
-            //calculations.calc.convertArrayToChar(calculations.calc.getOutput());//
             sT = String.valueOf(calculations.calc.postflixConvertToBinaryTree()).split("\\.")[0];
             textField.setText(sT);
         }

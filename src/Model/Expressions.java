@@ -15,17 +15,6 @@ public class Expressions {
     private String s;
     private char[] c;
 
-    public String getPostfix() {
-        return postfix;
-    }
-
-    public void setPostfix(String postfix) {
-        this.postfix = postfix;
-    }
-
-    public char[] getC() {
-        return c;
-    }
 
     //constructor
     public void Expressions() {
