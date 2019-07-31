@@ -30,14 +30,13 @@ public class Frame extends JFrame {
         panel.add(new ButtonZero(calculations, panel));
 
         panel.add(new ButtonAC(calculations, panel));
-        panel.add(new BackSpace(calculations, panel));
-        panel.add(new ButtonPlus(panel));
-        panel.add(new ButtonDecimal());
+        panel.add(new ButtonBackspace(calculations, panel));
+        panel.add(new ButtonPlus(calculations, panel));
+        panel.add(new ButtonDecimal(calculations, panel));
         panel.add(new ButtonEquals(panel));
-        panel.add(new ButtonMinus(panel));
+        panel.add(new ButtonMinus(calculations, panel));
         panel.add(new ButtonMultiply(calculations, panel));
-        panel.add(new ButtonMod());
-        panel.add(new ButtonDivide(panel));
+        panel.add(new ButtonDivide(calculations, panel));
 
         this.getContentPane().add(panel);
         //this.setContentPane(panel.getTextField());

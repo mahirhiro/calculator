@@ -1,16 +1,16 @@
 package View.Buttons;
 
-import Controller.BackSpaceAction;
+import Controller.ButtonBackspaceAction;
 import Model.Calculations;
 import View.Panel;
 
 import javax.swing.*;
 import java.awt.*;
 
-public class BackSpace extends JButton {
+public class ButtonBackspace extends JButton {
 
-    public BackSpace(Calculations calculations, Panel panel) {
-    super(new BackSpaceAction(calculations, panel));
+    public ButtonBackspace(Calculations calculations, Panel panel) {
+        super(new ButtonBackspaceAction(calculations, panel));
     setButtonProperties();
     }
 
@@ -18,9 +18,11 @@ public class BackSpace extends JButton {
         setVerticalTextPosition(AbstractButton.CENTER);
         setHorizontalTextPosition(AbstractButton.CENTER);
         setSize(50, 50);
-        setLocation(85, 10);
-        setFont(new Font("Helvetica", Font.PLAIN, 15));
+        setLocation(150, 10);
+        //setBounds(150,10,100,100);
+        setFont(new Font("Helvetica", Font.PLAIN, 20));
         setForeground(Color.BLACK);
+
         setBackground(new Color(165, 165, 165));
     }
 }

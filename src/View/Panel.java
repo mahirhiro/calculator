@@ -1,7 +1,6 @@
 package View;
 
 import Model.Calculations;
-import Model.Expressions;
 
 import javax.swing.*;
 import java.awt.*;
@@ -10,12 +9,8 @@ import java.text.DecimalFormat;
 public class Panel extends JPanel {
     private Calculations calculations;
     private static DecimalFormat df4 = new DecimalFormat("#.####");
-    private Expressions expressions;
-    private String sT = "";
+    private String oldSymbols = "";
 
-    public String getsT() {
-        return sT;
-    }
 
     public JTextField getTextField() {
         return textField;
@@ -30,7 +25,7 @@ public class Panel extends JPanel {
         textField.setPreferredSize(new Dimension(50,50));
         add(textField);
         textField.setEditable(false);
-        textField.setFont(new Font("Helvetica", Font.PLAIN, 30));
+        textField.setFont(new Font("Helvetica", Font.PLAIN, 35));
         textField.setHorizontalAlignment(SwingConstants.RIGHT);
         textField.setForeground(Color.WHITE);
         textField.setBackground(Color.BLACK);
@@ -45,20 +40,25 @@ public class Panel extends JPanel {
 
     public void updateTextBoxAC() {
         textField.setText(textField.getText().substring(0, textField.getText().length() - 1));
-        sT = textField.getText();
+        oldSymbols = textField.getText();
     }
-    public void stringCreater(String s) {
-        if (!s.equals("=")) {
-            sT = sT + s;
+
+    public void stringCreater(String newSymbol) {
+        if (!newSymbol.equals("=")) {
+            oldSymbols = oldSymbols + newSymbol;
         } else {
-            System.out.println("Before ST:" + sT);
-            textField.setText("" + calculations.calc.make(sT));
-            sT = "" + calculations.calc.make(sT);
+            System.out.println("Before ST:" + oldSymbols);
+            textField.setText("" + df4.format(calculations.calc.make(oldSymbols)));
+            oldSymbols = "" + calculations.calc.make(oldSymbols);
         }
     }
 
     public void clearTextBox() {
         textField.setText(calculations.resetI());
-        sT = "";
+        oldSymbols = "";
+    }
+
+    public void updateTextBoxSymbols() {
+        textField.setText(textField.getText() + calculations.getSymbolAcceptor());
     }
 }

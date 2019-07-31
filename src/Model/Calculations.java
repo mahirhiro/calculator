@@ -3,7 +3,7 @@ package Model;
 public class Calculations {
 
     public Expressions calc = new Expressions();
-
+    private String s;
     private int i;
 
     public int getI() {
@@ -16,10 +16,18 @@ public class Calculations {
 
     public Calculations() {
 
-
     }
 
     public String resetI() {
         return " ";
     }
+
+    public void symbolAcceptor(String s) {
+        this.s = s;
+    }
+
+    public String getSymbolAcceptor() {
+        return s;
+    }
+
 }

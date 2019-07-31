@@ -17,6 +17,5 @@ public class ButtonEqualsAction extends AbstractAction {
     public void actionPerformed(ActionEvent e) {
         System.out.println("Equals");
         panel.stringCreater("=");
-        //System.out.println("Output"+panel.getsT());
     }
 }

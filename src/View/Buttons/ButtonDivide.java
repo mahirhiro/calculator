@@ -1,14 +1,15 @@
 package View.Buttons;
 
 import Controller.ButtonDivideAction;
+import Model.Calculations;
 import View.Panel;
 
 import javax.swing.*;
 import java.awt.*;
 
 public class ButtonDivide extends JButton {
-    public ButtonDivide(Panel panel) {
-        super(new ButtonDivideAction(panel));
+    public ButtonDivide(Calculations calculations, Panel panel) {
+        super(new ButtonDivideAction(calculations, panel));
         setButtonProperties();
     }
 

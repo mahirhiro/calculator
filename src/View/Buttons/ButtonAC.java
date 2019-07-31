@@ -17,9 +17,9 @@ public class ButtonAC extends JButton {
     private void setButtonProperties() {
         setVerticalTextPosition(AbstractButton.CENTER);
         setHorizontalTextPosition(AbstractButton.CENTER);
-        setSize(50, 50);
+        setSize(115, 50);
         setLocation(20, 10);
-        setFont(new Font("Helvetica", Font.PLAIN, 18));
+        setFont(new Font("Helvetica", Font.PLAIN, 30));
         setForeground(Color.BLACK);
         setBackground(new Color(165, 165, 165));
     }

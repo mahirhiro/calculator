@@ -1,13 +1,15 @@
 package View.Buttons;
 
 import Controller.ButtonDecimalAction;
+import Model.Calculations;
+import View.Panel;
 
 import javax.swing.*;
 import java.awt.*;
 
 public class ButtonDecimal extends JButton {
-    public ButtonDecimal() {
-        super(new ButtonDecimalAction());
+    public ButtonDecimal(Calculations calculations, Panel panel) {
+        super(new ButtonDecimalAction(calculations, panel));
         setButtonProperties();
     }
 

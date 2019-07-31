@@ -1,14 +1,15 @@
 package View.Buttons;
 
 import Controller.ButtonMinusAction;
+import Model.Calculations;
 import View.Panel;
 
 import javax.swing.*;
 import java.awt.*;
 
 public class ButtonMinus extends JButton {
-    public ButtonMinus(Panel panel) {
-        super(new ButtonMinusAction(panel));
+    public ButtonMinus(Calculations calculations, Panel panel) {
+        super(new ButtonMinusAction(calculations, panel));
         setButtonProperties();
     }
 
